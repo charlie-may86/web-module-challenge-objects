@@ -52,17 +52,18 @@ export const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
-  discount: function(string) {
-    if(string === 'teacher' || string === 'student') {
-      return this.price *= .75  
-    } else if (string === 'public') {
-      return this.price *= .90
+  discount: function (string) {
+    if(string === "teacher" || string === "student") {
+      return this.price * .75;  
+    } else if (string === "public") {
+      return this.price * .90;
+    } else {
+      return this.price;
     }
   }
 }
 
-burger.discount('teacher')
-console.log(burger.price)
+console.log(burger.discount("teacher"))
 
 
 
@@ -83,7 +84,7 @@ Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
 
-console.log(reviews[5].feedback)
+// console.log(reviews[5].feedback)
 
 
 
@@ -150,7 +151,7 @@ function getLastReview(arr) {
 } 
 
 
-console.log(getLastReview(reviews))
+// console.log(getLastReview(reviews))
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
